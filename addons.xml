@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="repository.XstreamingTV" name="XstreamingTV Repo" version="1.2" provider-name="XstreamingTV">
+	<extension point="xbmc.addon.repository" name="IP Cable Cloud Repository">
+		<info compressed="false">http://raw.github.com/XstreamingTV/XstreamingTV-APK/master/addons.xml</info>
+		<checksum>http://raw.github.com/XstreamingTV/XstreamingTV-APK/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/XstreamingTV/XstreamingTV-APK/master/zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>XstreamingTV Repo Repository</summary>
+		<description>U can Download and Install Official Addons of XstreamingTV Repo</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="plugin.video.247tv" name="24-7 TV" version="1.1.0" provider-name="XstreamingTV">
+  <requires>
+   <import addon="xbmc.python" version="2.19.0"/>   
+   <import addon="script.module.beautifulsoup4" /> 
+   <import addon="script.module.requests"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>  
+  <extension point="xbmc.addon.metadata">    
+    <platform>all</platform>
+    <summary lang="en">Watch 24/7 Channels</summary>
+    <disclaimer lang="en"></disclaimer>
+    <language>en</language>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.fncablebandw" name="Old Movies" version="1.2.11" provider-name="XstreamingTV">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.urlresolver" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary></summary>
+    <description></description>
+  </extension>
+</addon>
+
+<addon id="plugin.video.XstreamingTV" name="XstreamingTV" version="1.0.0" provider-name="XstreamingTV">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.addon.common"/>
+    <import addon="script.module.pyxbmct"  />
+    <import addon="script.module.requests"/>
+
+  </requires>
+
+  <extension point="xbmc.python.pluginsource"
+            library="init.py">
+        <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.service" library="service.py" start="login"></extension>
+  <!--<extension point="xbmc.service" library="playMonitor.py" start="login"></extension>-->
+
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">[COLOR red]XstreamingTV[/COLOR]</summary>
+	<description lang="en">Get all your Live Sports n Live TV here</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.XstreamingTV" name="XstreamingTV Menus" version="1.0.0" provider-name="XstreamingTV">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.script" library="addon.py">
+            <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="login"/>
+	<extension point="xbmc.addon.metadata">
+		<language></language>
+		<platform>all</platform>
+		<license>GPLv2</license>
+	</extension>
+</addon>
+
+<addon id="script.XstreamingTVguide" name="XstreamingTV Guide" version="1.0.0" provider-name="XstreamingTV">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="script.module.simplejson" version="3.3.0"/>
+		<import addon="script.module.requests"/>
+		<import addon="script.module.beautifulsoup4"/>
+	</requires>
+	<extension point="xbmc.python.script" library="addon.py">
+            <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="login"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">XstreamingTV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG</summary>
+		<language></language>
+		<platform>all</platform>
+		<license>GPLv2</license>
+	</extension>
+</addon>
+</addons>
