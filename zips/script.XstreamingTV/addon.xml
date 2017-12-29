@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.XstreamingTV" name="XstreamingTV Menus" version="1.0.0" provider-name="XstreamingTV">
+<addon id="script.XstreamingTV" name="XstreamingTV Menus" version="1.0.1" provider-name="XstreamingTV">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
