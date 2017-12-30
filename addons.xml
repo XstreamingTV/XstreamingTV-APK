@@ -72,7 +72,7 @@
   </extension>
 </addon>
 
-<addon id="script.XstreamingTV" name="XstreamingTV Menus" version="1.0.1" provider-name="XstreamingTV">
+<addon id="script.XstreamingTV" name="XstreamingTV Menus" version="1.0.2" provider-name="XstreamingTV">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
