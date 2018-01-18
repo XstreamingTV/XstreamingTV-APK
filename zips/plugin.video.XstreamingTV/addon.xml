@@ -1,5 +1,5 @@
 <?xml version="2.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.XstreamingTV" name="XstreamingTV" version="51.5.005" provider-name="XstreamingTV">
+<addon id="plugin.video.XstreamingTV" name="XstreamingTV" version="51.4.005" provider-name="XstreamingTV">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.addon.common"/>
